@@ -1,0 +1,41 @@
+
+
+body{
+    font-weight: bold;
+    color: black;
+    font-size: 32px; 
+}
+
+
+div {
+    width: 50%;
+    padding: 5px;
+    border: 3px dotted black; 
+    height: 50%;
+    background-color: white;
+    margin: auto;
+    border-radius: 1px;
+    color: gray;
+    text-align: center;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+
+  }
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 20%;
+}
+
+
+  
+  h1 {
+
+    width: 300px;
+    height: 200px;
+    position: relative; 
+    
+
+
+  }
