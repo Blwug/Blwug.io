@@ -46,6 +46,9 @@ footer{
   text-decoration: none;
   font-size: 17px;
   font-family: WF Visual Sans, sans-serif;
+  line-height: 1.5em;
+  border-bottom: #000000;
+
 }
 
 /* Change the color of links on hover */
@@ -56,6 +59,7 @@ footer{
   right: 25%;
   bottom: 0;
   border: 1px  solid black;
+  text-decoration-color: antiquewhite;
 }
 
 
@@ -63,10 +67,10 @@ footer{
 .topnav a.active {
   color: rgb(0, 0, 0);
   font-family: WF Visual Sans, sans-serif;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+
 }
-
-
-
 
 
   h1 {
@@ -88,7 +92,24 @@ footer{
 
     display: block; 
     margin-left: auto;
-
-
-
+    width: fit-content;
+    border: 1px;
+    border-end-end-radius: 2px;
+    padding: 5px;
+    height: auto;
   }
+
+
+.Award {
+
+  opacity: .1;
+
+
+}
+
+
+.Award:hover {
+
+  opacity: 1;
+
+}
