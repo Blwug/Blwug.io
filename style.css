@@ -145,31 +145,30 @@ div {
   white-space: nowrap;
   overflow: hidden;
   grid-area: "text";
-  animation: movement 10s linear infinite;
+  position: relative;
+  
 
 }
 
 .scroll{
-
-  animation: scrolling 50s linear infinite;
-}
-
-@keyframes scrolling {
-  0%{
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+  
+  display: inline-block;
+  animation: scrolling 80s linear infinite;
+  
   
 }
 
-
-@keyframes movement {
-  100% {
-    transform: translateX (-66.6666%);
+@keyframes scrolling {
+  0% {
+    transform: translateX(100%);
+    
+  }
+  100%{
+    transform: translateX(-100%);
   }
 }
+
+
 
 
   img {
