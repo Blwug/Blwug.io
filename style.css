@@ -26,6 +26,14 @@ div {
   }
 
 
+.layout {
+  display: grid;
+
+  gap: 1rem; 
+  grid-template-areas: 
+  "Hello"
+  "text text";
+}
 
 .grid {
 
@@ -44,17 +52,6 @@ div {
 }
 
 
-
-footer{
-    position: fixed;
-    bottom: 5%;
-    width: 20%;
-    font: WF Visual Sans, sans-serif;
-    padding-left: 10px;
-    padding: 40px;
-}
-
-
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #ccebff;
@@ -63,8 +60,8 @@ footer{
   display: flex;
   justify-content: space-around;
   padding: 10px;
-
   border-bottom: solid antiquewhite; 
+  grid-area: "Header";
   
 
 }
@@ -112,14 +109,10 @@ footer{
   justify-content: center;
   width: 100%;
   height: 350px;
-  
-
+  grid-area: "Hello";
   animation: box 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
- 
-
-
 
 }
 
@@ -144,50 +137,33 @@ footer{
 
 .maintext {
 
-  width: 100%;
-  height: 60px;
  
-
-  overflow-x:auto;
-  overflow-y:auto;
+  margin-left: auto;
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
   white-space: nowrap;
-  animation: movement 4s linear infinite;
   overflow: hidden;
-  border: dotted;
+  grid-area: "text";
+  animation: movement 10s linear infinite;
 
 }
 
+.scroll{
 
-.scroll {
-  animation: scrolltext 10s linear infinite; 
-
-
-
+  animation: scrolling 50s linear infinite;
 }
 
-.portal {
-
-border-style: dashed;
-
-}
-
-
-
-@keyframes scrolltext {
+@keyframes scrolling {
   0%{
     transform: translateX(100%);
   }
-  100%{
-    transform: translateX(-100%);
-
+  100% {
+    transform: translateX(0%);
   }
-  200%{
-    transform: translateX(100%);
-
-
-  }
-
+  
 }
+
 
 @keyframes movement {
   100% {
@@ -209,6 +185,18 @@ border-style: dashed;
 
 
 
+  .letters{
+
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  
+  }
+  
 
   
 .Award {
@@ -223,18 +211,6 @@ border-style: dashed;
 .Award:hover {
 
   opacity: 1;
-
-
-}
-
-.letters{
-
-  position: relative;
-  display: inline-block;
-  height: 20px;
-  top: 50px;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
 
 }
