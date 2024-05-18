@@ -144,17 +144,20 @@ div {
   justify-content: flex-end;
   white-space: nowrap;
   overflow: hidden;
+
   grid-area: "text";
   position: relative;
   
 
 }
 
+
 .scroll{
   
   display: inline-block;
-  animation: scrolling 80s linear infinite;
-  
+  animation: scrolling 250s linear infinite;
+
+
   
 }
 
@@ -163,8 +166,8 @@ div {
     transform: translateX(100%);
     
   }
-  100%{
-    transform: translateX(-100%);
+  50%{
+    transform: translateX(50%);
   }
 }
 
@@ -213,5 +216,3 @@ div {
 
 
 }
-
-

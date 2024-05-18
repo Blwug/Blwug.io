@@ -16,3 +16,4 @@ function changeBackground(color) {
  }
  
  window.addEventListener("load",function() { changeBackground('#b3e0ff') });
+
